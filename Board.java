@@ -11,6 +11,7 @@ public class Board extends Canvas{
     Square[][] board;
     ArrayList<Player> playerList;
     static JLabel info = new JLabel();
+    String filepath = new String("");
 
     public Board(ArrayList<Player> pl) throws IOException{
         playerList = pl;
@@ -21,7 +22,7 @@ public class Board extends Canvas{
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel game = new JLabel();
-        game.setIcon(new ImageIcon("C:\\Users\\henri\\OneDrive - Universitetet i Oslo\\Projects\\SnakesAndLadders\\gameboard.jpg"));
+        game.setIcon(new ImageIcon(filepath));
         JPanel setup = new JPanel();
         JPanel squares = new JPanel();
 
